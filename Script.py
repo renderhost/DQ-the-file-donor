@@ -220,10 +220,10 @@ IMDb Data:
 
 🏷 Title: <a href={url}>{title} ({year})</a>
 🎭 Genres: {genres}
+🎥 Duration: {runtime}
 📆 Release: <a href={url}/releaseinfo>{release_date}</a>
 🌟 Rating: <a href={url}/ratings>{rating}</a> / 10
 📔 Storyline: {plot}
-🤗 Stars: {cast}
 🧾 Writers: {writer}</b>"""
     
     ALL_FILTERS = """
