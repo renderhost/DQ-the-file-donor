@@ -223,7 +223,7 @@ IMDb Data:
 📆 Release: <a href={url}/releaseinfo>{release_date}</a>
 🌟 Rating: <a href={url}/ratings>{rating}</a> / 10
 📔 Storyline: {plot}
-🤗 Cast: {cast}
+🤗 Stars: {cast}
 🧾 Writers: {writer}</b>"""
     
     ALL_FILTERS = """
