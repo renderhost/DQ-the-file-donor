@@ -114,8 +114,11 @@ async def get_poster(query, bulk=False, id=False, file=None):
     if plot and len(plot) > 800:
         plot = plot[0:800] + "..."
     run=list_to_str(movie.get("runtimes"))
-    runtime=int(run)
-    rstr=str(runtime//60)+'hr '+str(runtime%60)+'min'
+    if run!='N/A':
+        runtime=int(run)
+        rstr=str(runtime//60)+'hr '+str(runtime%60)+'min'
+    else:
+        rstr=run
     return {
         'title': movie.get('title'),
         'votes': movie.get('votes'),
